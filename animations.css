@@ -1,0 +1,54 @@
+.nt-collapse {
+    flex-grow: 0;
+}
+
+.nt-item {
+    transition: flex-grow 1s ease-in-out;
+}
+
+
+.marque-page {
+    cursor: pointer;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marque-page-text {
+    writing-mode: vertical-rl;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }; 
+    100% {
+        opacity: 0;
+    }; 
+}
+
+@keyframes translateContent {
+    0% {
+        transform: translateY(15%);
+    }; 
+    100% {
+        transform: translateY(0%);
+    }; 
+}
+
+.translate-content {
+    animation: translateContent 0.55s ease-out;
+}
+
+.fade-out {
+    animation: fadeOut 0.55s linear;
+}
+
+.fade-in {
+    animation: fadeOut 0.55s linear reverse, translateContent 0.55s ease-out;
+}
+
+.nt-hidden {
+    display: none;
+}
