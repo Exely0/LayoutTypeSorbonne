@@ -22,19 +22,19 @@
 @keyframes fadeOut {
     0% {
         opacity: 1;
-    }; 
+    }
     100% {
         opacity: 0;
-    }; 
+    }
 }
 
 @keyframes translateContent {
     0% {
         transform: translateY(15%);
-    }; 
+    } 
     100% {
         transform: translateY(0%);
-    }; 
+    }
 }
 
 .translate-content {
